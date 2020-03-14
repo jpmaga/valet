@@ -99,7 +99,7 @@ $uri = rawurldecode(
 $siteName = basename(
     // Filter host to support wildcard dns feature
     valet_support_wildcard_dns($_SERVER['HTTP_HOST']),
-    '.'.$valetConfig['tld']
+    '.dev.'.$valetConfig['tld']
 );
 
 if (strpos($siteName, 'www.') === 0) {
